@@ -1,0 +1,112 @@
+.chatroom-body{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    max-height: 70vh;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px black;
+    overflow-y: hidden;
+}
+.chat-profile{
+    background-color: rgb(143, 255, 244);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px
+}
+.chat-profile button{
+    padding: .5rem .75rem;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.chat-profile h2{
+    font-size: 1.3rem;
+}
+.chat-profile p{
+    color: grey;
+    font-size: .875rem;
+}
+.messages{
+    /* position: relative; */
+    overflow-y: scroll;
+    max-height: calc(70vh - 67px);
+    height: calc(70vh - 67px);
+    padding-bottom: 60px;
+}
+.message{
+    margin-left: 10px;
+    right: 0;
+}
+.message-container .content{
+    min-width: 40%;
+    max-width: 70%;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: black;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.message-container h5{
+    color: grey;
+    font-size: 0.75rem;
+    margin-left: 10px;
+}
+.message-container .message{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.message-container .message-mine{
+    align-items: flex-end;
+}
+.chatroom-type{
+    position: sticky;
+    bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px black;
+}
+.chatroom-type input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    max-width: 100%;
+    word-wrap: wrap;
+    white-space: wrap;
+    flex-grow: 1;
+}
+
+.chatroom-type button svg{
+    fill:white;
+}
+.chatroom-type button{
+    background-color: #40e0d0;
+
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.stb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(46, 46, 46);
+}
