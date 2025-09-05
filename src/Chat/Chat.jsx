@@ -49,12 +49,17 @@ function Chat() {
         navigate(`/chat/${roomId}`);
       }
     })
+   socket.on("error", ({message})=> {
+      setPageLoading(prev => prev = false);
+      setMessage(message);
+    })
     socket.on("noroom", ({message}) => {
       setPageLoading(prev => prev = false);
-      setMessage(message)
+      setMessage(message);
     })
      return () => {
-      socket.off("no-room")
+      socket.off("no-room");
+        socket.off("error");
       socket.off("get-room");
     }
   }, []);
