@@ -17,7 +17,7 @@ import Header from '../../components/Header.jsx';
 //   transports: ["websocket"], 
 // });
 
-const socketURL = "https://chatmessageapi.onrender.com/";
+const socketURL = "https://chatmessageapi.onrender.com";
 const token = localStorage.getItem("token")
 export const socket = io(socketURL, {
    transports: ["websocket"],
