@@ -1,6 +1,6 @@
 import axios from "axios";
-const isDevelopment = true;
-const baseURL = isDevelopment ? "http://localhost:6500" :"https://c7jh8bc2-6500.uks1.devtunnels.ms";
+
+const baseURL = "https://chatmessageapi.onrender.com";
 export const signUp = async (data) => {
     const res = await axios.post(baseURL + "/user/signup", data);
     if(!res.data.token){
